@@ -18,7 +18,7 @@ public class HottestTempReducer extends Reducer<Text,Text,Text,Text> {
         String timestamp_at_max = null;
         for(Text t : values)
         {
-            String[] tokens = t.toString().split("\t");
+            String[] tokens = t.toString().split("::");
             System.out.println(tokens[0]+ " "+tokens[1]);
             if (Float.parseFloat(tokens[2]) > max_temp) {
                 max_temp = Float.parseFloat(tokens[2]);
@@ -26,6 +26,6 @@ public class HottestTempReducer extends Reducer<Text,Text,Text,Text> {
                 timestamp_at_max = tokens[0];
             }
         }
-        context.write(new Text(geo_hash_max),new Text(timestamp_at_max+"\t"+Float.toString(max_temp)));
+        context.write(new Text(geo_hash_max),new Text(timestamp_at_max+"::"+Float.toString(max_temp)));
     }
 }

@@ -20,7 +20,7 @@ public class SnowDepthReducer1 extends Reducer<Text, Text, Text, Text> {
 
         for(Text f : values)
         {
-            String[] tokens = f.toString().split("\t");
+            String[] tokens = f.toString().split("::");
             if(Float.parseFloat(tokens[1]) > max)
             {
                 max = Float.parseFloat(tokens[1]);

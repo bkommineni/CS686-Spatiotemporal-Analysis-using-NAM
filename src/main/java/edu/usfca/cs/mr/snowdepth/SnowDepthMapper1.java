@@ -14,8 +14,8 @@ public class SnowDepthMapper1 extends Mapper<LongWritable, Text, Text, Text> {
 
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
-        String[] tokens = value.toString().split("\t");
-        Text text = new Text(tokens[0] + "\t" +tokens[1]);
+        String[] tokens = value.toString().split("::");
+        Text text = new Text(tokens[0] + "::" +tokens[1]);
         context.write(new Text(tokens[0].substring(0,2)),text);
     }
 }

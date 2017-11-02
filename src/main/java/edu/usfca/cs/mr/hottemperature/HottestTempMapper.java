@@ -15,6 +15,6 @@ public class HottestTempMapper extends Mapper<LongWritable,Text,Text,Text> {
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         String[] features = value.toString().split("\t");
         System.out.println("tokens length "+features.length);
-        context.write(new Text(features[1].substring(0,2)),new Text(features[0]+"\t"+features[1]+"\t"+features[40]));
+        context.write(new Text(features[1].substring(0,2)),new Text(features[0]+"::"+features[1]+"::"+features[40]));
     }
 }

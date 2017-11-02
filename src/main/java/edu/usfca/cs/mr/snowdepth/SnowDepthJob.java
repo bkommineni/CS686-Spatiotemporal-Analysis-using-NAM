@@ -18,7 +18,7 @@ public class SnowDepthJob {
     public static void main(String[] args) {
         try {
             Configuration conf = new Configuration();
-	        conf.set("mapreduce.textoutputformat.separator", "\t");
+	        conf.set("mapreduce.textoutputformat.separator", "::");
 
             Job job = Job.getInstance(conf, "snow depth job");
             job.setJarByClass(SnowDepthJob.class);
@@ -34,7 +34,7 @@ public class SnowDepthJob {
             job.waitForCompletion(true);
 
             Configuration configuration = new Configuration();
-            configuration.set("mapreduce.textoutputformat.separator", "\t");
+            configuration.set("mapreduce.textoutputformat.separator", "::");
 	        System.out.println("Before starting job 2");
             Job job2 = Job.getInstance(configuration, "snow depth job2");
             job2.setJarByClass(SnowDepthJob.class);

@@ -17,7 +17,7 @@ public class HottestTempJob {
     public static void main(String[] args) {
         try {
             Configuration conf = new Configuration();
-            conf.set("mapreduce.textoutputformat.separator","\t");
+            conf.set("mapreduce.textoutputformat.separator","::");
             Job job = Job.getInstance(conf, "hottest temp job");
             job.setJarByClass(HottestTempJob.class);
             job.setMapperClass(HottestTempMapper.class);
@@ -33,7 +33,7 @@ public class HottestTempJob {
 
             Configuration config = new Configuration();
             Job job2 = Job.getInstance(config, "hottest temp job2");
-            config.set("mapreduce.textoutputformat.separator","\t");
+            config.set("mapreduce.textoutputformat.separator","::");
             job2.setJarByClass(HottestTempJob.class);
             job2.setMapperClass(HottestTempMapper1.class);
             job2.setCombinerClass(HottestTempReducer1.class);
