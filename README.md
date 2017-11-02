@@ -10,7 +10,7 @@ The project specification defines several questions that you will answer with Ma
 
 ## Deliverable I
 
-Responses go here.
+No of records in the data set - 323759744
 
 ## Deliverable II
 
