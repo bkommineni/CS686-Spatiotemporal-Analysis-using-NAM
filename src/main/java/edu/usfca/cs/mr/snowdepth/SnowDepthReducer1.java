@@ -10,7 +10,7 @@ import java.util.*;
 /**
  * Created by bharu on 11/1/17.
  */
-public class SnowDepthReducer1 extends Reducer<Text, Text, Text, FloatWritable> {
+public class SnowDepthReducer1 extends Reducer<Text, Text, Text, Text> {
 
     @Override
     protected void reduce(Text key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
@@ -27,6 +27,6 @@ public class SnowDepthReducer1 extends Reducer<Text, Text, Text, FloatWritable> 
                 geohash_max = tokens[0];
             }
         }
-        context.write(new Text(geohash_max),new FloatWritable(max));
+        context.write(new Text(geohash_max),new Text(Float.toString(max)));
     }
 }

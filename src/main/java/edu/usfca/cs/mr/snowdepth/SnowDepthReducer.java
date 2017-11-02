@@ -9,20 +9,21 @@ import java.io.IOException;
 /**
  * Created by bharu on 11/1/17.
  */
-public class SnowDepthReducer extends Reducer<Text, FloatWritable, Text, Text> {
+public class SnowDepthReducer extends Reducer<Text, Text, Text, Text> {
 
     @Override
-    protected void reduce(Text key, Iterable<FloatWritable> values, Context context) throws IOException, InterruptedException {
+    protected void reduce(Text key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
 
         boolean allGreater = true;
         float sum = 0;
         int count = 0;
 
-        for(FloatWritable f : values)
+        for(Text t : values)
         {
-            if(f.get() > 0)
+            float f = Float.parseFloat(t.toString());
+            if(f > 0)
             {
-                sum = sum + f.get();
+                sum = sum + f;
                 count = count + 1;
             }
             else

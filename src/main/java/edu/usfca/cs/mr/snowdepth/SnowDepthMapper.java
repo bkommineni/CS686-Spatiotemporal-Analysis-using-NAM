@@ -10,11 +10,11 @@ import java.io.IOException;
 /**
  * Created by bharu on 11/1/17.
  */
-public class SnowDepthMapper extends Mapper<LongWritable, Text, Text, FloatWritable> {
+public class SnowDepthMapper extends Mapper<LongWritable, Text, Text, Text> {
 
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         String[] tokens = value.toString().split("\t");
-        context.write(new Text(tokens[1]),new FloatWritable(Float.parseFloat(tokens[50])));
+        context.write(new Text(tokens[1]),new Text(tokens[50]));
     }
 }
