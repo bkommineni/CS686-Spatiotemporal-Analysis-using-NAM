@@ -9,7 +9,7 @@ import java.io.IOException;
 /**
  * Created by bharu on 11/1/17.
  */
-public class SnowDepthReducer extends Reducer<Text, FloatWritable, Text, FloatWritable> {
+public class SnowDepthReducer extends Reducer<Text, FloatWritable, Text, Text> {
 
     @Override
     protected void reduce(Text key, Iterable<FloatWritable> values, Context context) throws IOException, InterruptedException {
@@ -35,7 +35,7 @@ public class SnowDepthReducer extends Reducer<Text, FloatWritable, Text, FloatWr
         if(allGreater)
         {
             float avg = sum/count;
-            context.write(key,new FloatWritable(avg));
+            context.write(key,new Text(Float.toString(avg)));
         }
     }
 }

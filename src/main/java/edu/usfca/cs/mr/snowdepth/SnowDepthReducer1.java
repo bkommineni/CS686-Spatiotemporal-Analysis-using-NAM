@@ -14,7 +14,7 @@ public class SnowDepthReducer1 extends Reducer<Text, Text, Text, FloatWritable> 
 
     @Override
     protected void reduce(Text key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
-
+        System.out.println("Before Reducer 1");
         float max = 0;
         String geohash_max = null;
 
