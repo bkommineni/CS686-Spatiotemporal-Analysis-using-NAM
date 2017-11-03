@@ -20,13 +20,13 @@ public class SnowDepthReducer1 extends Reducer<Text, Text, Text, Text> {
 
         for(Text f : values)
         {
-            String[] tokens = f.toString().split("::");
-            if(Float.parseFloat(tokens[1]) > max)
-            {
+            String str = f.toString();
+            String[] tokens = str.split(",");
+            if (Float.parseFloat(tokens[1]) > max) {
                 max = Float.parseFloat(tokens[1]);
                 geohash_max = tokens[0];
             }
         }
-        context.write(new Text(geohash_max),new Text(Float.toString(max)));
+       context.write(new Text(geohash_max),new Text(Float.toString(max)));
     }
 }
