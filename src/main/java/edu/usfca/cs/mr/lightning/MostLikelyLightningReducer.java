@@ -17,7 +17,8 @@ public class MostLikelyLightningReducer extends Reducer<Text, FloatWritable, Tex
         int count = 0;
         for(FloatWritable f : values)
         {
-            count = count +1;
+            if(f.get() == 1.0)
+                count = count +1;
         }
         context.write(key,new IntWritable(count));
     }

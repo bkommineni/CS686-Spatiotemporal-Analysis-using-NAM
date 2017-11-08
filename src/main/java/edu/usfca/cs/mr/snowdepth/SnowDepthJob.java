@@ -1,6 +1,7 @@
 package edu.usfca.cs.mr.snowdepth;
 
 import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.FloatWritable;
 import org.apache.hadoop.io.Text;
@@ -48,7 +49,9 @@ public class SnowDepthJob {
             FileInputFormat.addInputPath(job2, new Path(args[1]));
             FileOutputFormat.setOutputPath(job2, new Path(args[2]));
             System.out.println("Before starting job 2 - before blocking method");
-            System.exit(job2.waitForCompletion(true) ? 0 : 1);
+            System.exit(job2.waitForCompletion(true) ? 0:1);
+            //FileSystem fs = FileSystem.get(configuration);
+            //fs.delete(new Path(args[1]),true);
         } catch (IOException e) {
             System.err.println(e.getMessage());
         } catch (InterruptedException e) {
