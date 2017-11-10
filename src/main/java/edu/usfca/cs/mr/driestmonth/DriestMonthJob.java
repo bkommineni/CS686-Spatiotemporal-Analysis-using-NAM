@@ -12,7 +12,7 @@ import java.io.IOException;
 /**
  * Created by bharu on 11/3/17.
  */
-public class DriestMonthJob {
+    public class DriestMonthJob {
 
     public static void main(String[] args) {
         Configuration conf = new Configuration();

@@ -5,6 +5,8 @@ import org.apache.hadoop.mapreduce.Reducer;
 
 import javax.xml.transform.Templates;
 import java.io.IOException;
+import java.sql.Timestamp;
+import java.util.Calendar;
 
 /**
  * Created by bharu on 11/1/17.
@@ -27,6 +29,8 @@ public class HottestTempReducer1 extends Reducer<Text,Text,Text,Text> {
                 timestamp_max = tokens[1];
             }
         }
-        context.write(new Text(geohash_max),new Text(timestamp_max+","+Float.toString(max_temp)));
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTimeInMillis(Long.parseLong(timestamp_max));
+        context.write(new Text(geohash_max),new Text(calendar.getTime()+","+Float.toString(max_temp)));
     }
 }

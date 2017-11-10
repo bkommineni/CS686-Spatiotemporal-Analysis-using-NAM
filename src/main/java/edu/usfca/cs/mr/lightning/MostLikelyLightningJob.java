@@ -48,7 +48,6 @@ public class MostLikelyLightningJob {
 
 
             Configuration config1 = new Configuration();
-            config1.set("mapreduce.output.textoutputformat.separator",",");
             Job job3 = Job.getInstance(config1, "most likely lightning job3");
             job3.setJarByClass(MostLikelyLightningJob.class);
             job3.setMapperClass(MostLikelyLightningMapper2.class);

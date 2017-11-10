@@ -5,6 +5,7 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
 import java.io.IOException;
+import java.util.Iterator;
 
 /**
  * Created by bharu on 11/2/17.
@@ -16,8 +17,15 @@ public class MostLikelyLightningReducer1 extends Reducer<Text,Text,Text,IntWrita
         String geohash_max = null;
         int max = 0;
 
-        for(Text t : values)
+        Iterator<Text> iterator = values.iterator();
+        Text te = iterator.next();
+        String[] strings = te.toString().split(",");
+        max = Integer.parseInt(strings[1]);
+        geohash_max = strings[0];
+
+        while (iterator.hasNext())
         {
+            Text t = iterator.next();
             String[] tokens = t.toString().split(",");
             if(Integer.parseInt(tokens[1]) > max)
             {
