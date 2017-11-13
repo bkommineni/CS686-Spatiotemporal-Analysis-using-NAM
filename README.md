@@ -53,13 +53,65 @@ List of Bay Area Geohashes:
 
 From the histogram, we can say that April is driest month in Bay Area
 
+###### Personalized Travel Itinerary
+
+My travel itinerary includes below 5 regions:
+1. Arizona
+2. Florida
+3. Oregon
+4. Colorado
+5. Washington
+
+My personal preferences for travel include:
+Min Avg temperature - 290K
+Max Avg temperature - 302K
+Max Avg Relative Humidity - 80%
+Max Avg Snow Depth - 5m
+
+Based on above preferences and 2015 climate data for the 5 regions :
+Favourable months to visit them would be:
+1. Arizona - May,Jun,Jul,Sep,Oct
+2. Florida - Mar,Apr,May,Sep,Oct,Nov,Dec
+3. Oregon - Jun,Jul,Aug,Sep
+4. Colorado - Jun,Jul,Aug,Sep
+5. Washington - Jun,Jul,Aug
+
+
+###### NorthAmerica Geohash prefixes
+
+![alt text](images/NorthAmericaDataPoints.png "List of North America Geohash prefixes")<!-- .element height="10%" width="10%" -->
+
+###### Top 3 geohashes suitable for solar farms in North America
+
+Places with minimum cloud cover are considered for having solar farms<br/>
+c9vek55pkrxb(Canada Saskatchewan)      -2.04082295E17<br/>
+9r8047xr5b5b(Oregon near to border of California)    -2.0833402E17<br/>
+cdjqy1uehgh0(Canada Saskatchewan)     -2.09644294E17<br/>
+9ybzhkx9ke2p(Kansas)    -2.10084718E17<br/>
+cd40z5s29gkp(Canada Saskatchewan)    -2.10971147E17<br/>
+f9um3p577vzz(NewFoundLand And Labrador)    -2.11417188E17<br/>
+
+###### Top 3 geohashes suitable for wind farms in North America
+
+Places with maximum wind speed are considered for having wind farms<br/>
+f2p6h1y1bkrz(Maine)    44.024353<br/>
+f2p266bhdqh0(Maine)    43.98576<br/>
+f2pmh0tmz6zz(Maine)    43.960354<br/>
+f2pk7w2wvb7z(Maine)    43.934837<br/>
+f2pstvxr0180(Maine)    43.93313<br/>
+f2pvtfen2mzz(New Brunswick)    43.851044<br/>
+
+Looks like Maine state is preferable for wind farms in North America<br/>
+
+
 ###### Top 3 geohashes suitable for both solar and wind farms in North America
 
-![alt text](images/NorthAmericaDataPoints.png "List of North America Geohash prefixes")
-
-Geohash                                                 wind_speed             cloud_cover<br/>
+Features used to determine this are wind speed and cloud cover:
 dptp9djvykeb(Michigan)                                  40.09668711334537       -7.3170994E17<br/>
 cbdgu8ssqukp(Border of North Dakota and Minnesota)      35.14385868738097       -7.3170994E17<br/>
 cd5q18brc4gz(Canada)                                    32.80954470153044       -7.3170994E17<br/>
 
+
+Have written two chained jobs to find out these:
+1st job took 12mins and 2nd job took 25sec to complete 
 

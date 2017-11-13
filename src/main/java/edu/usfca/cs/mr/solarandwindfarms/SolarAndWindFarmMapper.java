@@ -17,9 +17,9 @@ public class SolarAndWindFarmMapper extends Mapper<LongWritable,Text,Text,Text> 
             "cm","ct","cv","fj","fm","ft","fv","gj","gm",
             "bk","bs","ch","ck","cs","cu","fh","fk","fu",
             "gh","gk","b7","be","bg","c5","c7","ce","cg","f7",
-            "fg","g5","b6","c4","c6","cd","cf","f6",
+            "fg","g5","c4","c6","cd","cf","f6",
             "c1","c3","c9","cc","f1","f3","f9",
-            "c2","c8","cb","f0","f2","9r","9x","9z","dp","dr",
+            "c2","c8","cb","f0","f2","9r","9x","9z","dp",
             "9q","9w","9y","dn","9t","9v","9s",
             "9e","9g","d4"
     };
