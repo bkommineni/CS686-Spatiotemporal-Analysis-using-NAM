@@ -5,6 +5,7 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
 import java.io.IOException;
+import java.util.Iterator;
 
 /**
  * Created by bharu on 11/1/17.
@@ -16,8 +17,17 @@ public class HottestTempReducer extends Reducer<Text,Text,Text,Text> {
         float max_temp = 0;
         String geo_hash_max = null;
         String timestamp_at_max = null;
-        for(Text t : values)
+
+        Iterator<Text> iterator = values.iterator();
+        Text te = iterator.next();
+        String[] ts = te.toString().split(",");
+        max_temp = Float.parseFloat(ts[2]);
+        geo_hash_max = ts[1];
+        timestamp_at_max = ts[0];
+
+        while (iterator.hasNext())
         {
+            Text t = iterator.next();
             String[] tokens = t.toString().split(",");
             if (Float.parseFloat(tokens[2]) > max_temp) {
                 max_temp = Float.parseFloat(tokens[2]);

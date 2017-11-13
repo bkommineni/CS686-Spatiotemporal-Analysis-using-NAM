@@ -4,6 +4,7 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
 import java.io.IOException;
+import java.util.Iterator;
 
 /**
  * Created by bharu on 11/6/17.
@@ -17,8 +18,19 @@ public class ClimateChartReducer extends Reducer<Text,Text,Text,Text> {
         float sum_temp = 0;
         float sum_precp = 0;
         int count = 0;
-        for(Text t : values)
+
+        Iterator<Text> iterator = values.iterator();
+        Text te = iterator.next();
+        String[] ts = te.toString().split("\t");
+        max_temp = Float.parseFloat(ts[1]);
+        min_temp = Float.parseFloat(ts[1]);
+        sum_temp = sum_temp + Float.parseFloat(ts[1]);
+        sum_precp = sum_precp + Float.parseFloat(ts[2]);
+        count = count + 1;
+
+        while (iterator.hasNext())
         {
+            Text t = iterator.next();
             String[] tokens = t.toString().split("\t");
             String geohash = tokens[0];
             String temperature = tokens[1];

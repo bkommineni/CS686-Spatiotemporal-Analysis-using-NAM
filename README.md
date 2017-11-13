@@ -14,7 +14,7 @@ The project specification defines several questions that you will answer with Ma
 
 ###### No of records in the data set - 108000000
 
-###### There are only three geohashes where snow depth is greater than zero for entire year :
+###### There are only three geohashes where snow depth is greater than zero for entire year 
 
 All three places are in canada:
 
@@ -22,7 +22,7 @@ c41xurr50ypb    1.4427822 (Canada near to Mt. Edziza Provincial Park near to Gul
 c1p5fmbjmkrz    0.85555875 (Canada near to Homathko river -Tatlayoko protected area)</br>
 c1gyqex11wpb    0.5148892 (Canada near to Mount Pattullo)</br>
 
-###### Hottest temperature as per dataset is observed at :
+###### Hottest temperature as per dataset is observed at 
 
 d5f0jqerq27b    Sun Aug 23 11:00:00 PDT 2015,330.67432(134°F)</br>
 
@@ -32,7 +32,7 @@ created by average highs of 34°C/93°F in the heat of the day and average lows 
 June is the hottest month in Cancun with an average temperature of 28°C (82°F).
 Coldest is January at 23°C (73°F) with the most daily sunshine hours at 11 in August.
 
-###### Most frequently struck by lightning :
+###### Most frequently struck by lightning 
 
 Everything near to Mexico
 
@@ -43,9 +43,9 @@ d7mkkfvu34up    135 Dominian Republic</br>
 9wkkbht8spkp    87</br>
 941zjqq2vtxu    84</br>
 
-###### Driest Month in Bay Area during 2015:
+###### Driest Month in Bay Area during 2015
 
-List of Bay Area Geohashes:
+###### Bay Area Geohash prefixes
 
 ![alt text](images/BayAreaDataPoints.png "List of Bay Area Geohash prefixes")
 
@@ -62,11 +62,11 @@ My travel itinerary includes below 5 regions:
 4. Colorado
 5. Washington
 
-My personal preferences for travel include:
-Min Avg temperature - 290K
-Max Avg temperature - 302K
-Max Avg Relative Humidity - 80%
-Max Avg Snow Depth - 5m
+My personal preferences for travel include:<br/>
+Min Avg temperature - 290K<br/>
+Max Avg temperature - 302K<br/>
+Max Avg Relative Humidity - 80%<br/>
+Max Avg Snow Depth - 5m<br/>
 
 Based on above preferences and 2015 climate data for the 5 regions :
 Favourable months to visit them would be:
@@ -114,4 +114,10 @@ cd5q18brc4gz(Canada)                                    32.80954470153044       
 
 Have written two chained jobs to find out these:
 1st job took 12mins and 2nd job took 25sec to complete 
+
+###### Climate chart for San Francisco, CA
+
+![alt text](images/sanfrancisco_climate_details.png "Climate chart for San Francisco,CA")<!-- .element height="10%" width="10%" -->
+
+
 

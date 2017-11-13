@@ -18,7 +18,6 @@ public class SolarAndWindFarmsReducer1 extends Reducer<Text,Text,Text,Text> {
 
         float min_avg_cloud_cover = 0;
         double max_avg_wind_speed = 0;
-        int count = 0;
         Iterator<Text> iterator = values.iterator();
         List<Text> values_1 = new ArrayList<>();
 
@@ -29,6 +28,7 @@ public class SolarAndWindFarmsReducer1 extends Reducer<Text,Text,Text,Text> {
         String avg_cloud_covere = tokense[2];
         min_avg_cloud_cover = Float.parseFloat(avg_cloud_covere);
         max_avg_wind_speed = Float.parseFloat(avg_wind_speede);
+
         while (iterator.hasNext())
         {
             Text t  = iterator.next();
@@ -46,7 +46,6 @@ public class SolarAndWindFarmsReducer1 extends Reducer<Text,Text,Text,Text> {
             {
                 max_avg_wind_speed = Double.parseDouble(avg_wind_speed);
             }
-            count = count + 1;
         }
 
         System.out.println("Min cc: "+min_avg_cloud_cover+"Max ws: "+max_avg_wind_speed);

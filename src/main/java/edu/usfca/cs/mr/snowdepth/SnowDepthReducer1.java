@@ -18,8 +18,15 @@ public class SnowDepthReducer1 extends Reducer<Text, Text, Text, Text> {
         float max = 0;
         String geohash_max = null;
 
-        for(Text f : values)
+        Iterator<Text> iterator = values.iterator();
+        Text t = iterator.next();
+        String[] ts = t.toString().split(",");
+        max = Float.parseFloat(ts[1]);
+        geohash_max = ts[0];
+
+        while (iterator.hasNext())
         {
+            Text f = iterator.next();
             String str = f.toString();
             String[] tokens = str.split(",");
             if (Float.parseFloat(tokens[1]) > max) {
