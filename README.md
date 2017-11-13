@@ -1,20 +1,16 @@
 # Project 2 - Spatiotemporal Analysis with MapReduce
 
-This repository includes starter files and a sample directory structure. You are welcome to use it or come up with your own project structure.
-
 Project Specification: https://www.cs.usfca.edu/~mmalensek/courses/cs686/projects/project-2.html
 
 # Deliverables
-
-The project specification defines several questions that you will answer with MapReduce jobs. You should edit this document (README.md) with your answers as you find them, including figures, references, etc. This will also serve as a way of tracking your progress through the milestones.
 
 ## Deliverable I
 
 ###### For the 30% dataset provided :
 
-###### No of records in the data set - 108000000
+###### No of records in the data set - 108000000 - (1)3min 46sec
 
-###### There are only three geohashes where snow depth is greater than zero for entire year 
+###### There are only three geohashes where snow depth is greater than zero for entire year - (1)10min 17sec(2)23sec
 
 All three places are in canada:
 
@@ -22,7 +18,7 @@ c41xurr50ypb    1.4427822 (Canada near to Mt. Edziza Provincial Park near to Gul
 c1p5fmbjmkrz    0.85555875 (Canada near to Homathko river -Tatlayoko protected area)</br>
 c1gyqex11wpb    0.5148892 (Canada near to Mount Pattullo)</br>
 
-###### Hottest temperature as per dataset is observed at 
+###### Hottest temperature as per dataset is observed at  - (1)9min 32sec (2)21sec
 
 d5f0jqerq27b    Sun Aug 23 11:00:00 PDT 2015,330.67432(134°F)</br>
 
@@ -32,7 +28,7 @@ created by average highs of 34°C/93°F in the heat of the day and average lows 
 June is the hottest month in Cancun with an average temperature of 28°C (82°F).
 Coldest is January at 23°C (73°F) with the most daily sunshine hours at 11 in August.
 
-###### Most frequently struck by lightning 
+###### Most frequently struck by lightning (1)12min 10sec (2)23sec (3)20sec
 
 Everything near to Mexico
 
@@ -43,17 +39,17 @@ d7mkkfvu34up    135 Dominian Republic</br>
 9wkkbht8spkp    87</br>
 941zjqq2vtxu    84</br>
 
-###### Driest Month in Bay Area during 2015
+###### Driest Month in Bay Area during 2015 - (1)10min
 
 ###### Bay Area Geohash prefixes
 
-![alt text](images/BayAreaDataPoints.png "List of Bay Area Geohash prefixes")
+![alt tag](images/BayAreaDataPoints.png "List of Bay Area Geohash prefixes")
 
-![alt text](images/DriestMonth.png "Avg precipitation values in Bay Area 2015")
+![alt tag](images/DriestMonth.png "Avg precipitation values in Bay Area 2015")
 
 From the histogram, we can say that April is driest month in Bay Area
 
-###### Personalized Travel Itinerary
+###### Personalized Travel Itinerary - (1)6min 44sec
 
 My travel itinerary includes below 5 regions:
 1. Arizona
@@ -79,9 +75,9 @@ Favourable months to visit them would be:
 
 ###### NorthAmerica Geohash prefixes
 
-![alt text](images/NorthAmericaDataPoints.png "List of North America Geohash prefixes")<!-- .element height="10%" width="10%" -->
+![alt tag](images/NorthAmericaDataPoints.png "List of North America Geohash prefixes")<!-- .element height="10%" width="10%" -->
 
-###### Top 3 geohashes suitable for solar farms in North America
+###### Top 3 geohashes suitable for solar farms in North America (1)27min 55sec (2)25sec
 
 Places with minimum cloud cover are considered for having solar farms<br/>
 c9vek55pkrxb(Canada Saskatchewan)      -2.04082295E17<br/>
@@ -106,7 +102,7 @@ Looks like Maine state is preferable for wind farms in North America<br/>
 
 ###### Top 3 geohashes suitable for both solar and wind farms in North America
 
-Features used to determine this are wind speed and cloud cover:
+Features used to determine this are wind speed and cloud cover:<br/>
 dptp9djvykeb(Michigan)                                  40.09668711334537       -7.3170994E17<br/>
 cbdgu8ssqukp(Border of North Dakota and Minnesota)      35.14385868738097       -7.3170994E17<br/>
 cd5q18brc4gz(Canada)                                    32.80954470153044       -7.3170994E17<br/>
@@ -115,9 +111,11 @@ cd5q18brc4gz(Canada)                                    32.80954470153044       
 Have written two chained jobs to find out these:
 1st job took 12mins and 2nd job took 25sec to complete 
 
-###### Climate chart for San Francisco, CA
+###### Climate chart for San Francisco, CA (1)7min
 
-![alt text](images/sanfrancisco_climate_details.png "Climate chart for San Francisco,CA")<!-- .element height="10%" width="10%" -->
+Geohash prefix for San Francisco - 9q8y
+
+![alt tag](images/sanfrancisco_climate_details.png "Climate chart for San Francisco,CA")<!-- .element height="10%" width="10%" -->
 
 
 
