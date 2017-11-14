@@ -13,7 +13,7 @@ public class MostLikelyLightningMapper2 extends Mapper<LongWritable,Text,Text,Te
 
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
-        String[] tokens = value.toString().split(",");
+        String[] tokens = value.toString().split("\t");
         context.write(new Text(tokens[0].substring(0,2)),value);
     }
 }

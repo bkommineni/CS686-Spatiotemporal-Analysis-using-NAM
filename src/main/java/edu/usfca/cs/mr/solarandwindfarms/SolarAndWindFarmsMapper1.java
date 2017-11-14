@@ -16,6 +16,8 @@ public class SolarAndWindFarmsMapper1 extends Mapper<LongWritable,Text,Text,Text
         String geohash = tokens[0];
         String avg_wind_speed = tokens[1];
         String avg_cloud_cover = tokens[2];
-        context.write(new Text("record"),new Text(geohash+"\t"+avg_wind_speed+"\t"+avg_cloud_cover));
+        String avg_temperature = tokens[3];
+        context.write(new Text("record"),new Text(geohash+"\t"+avg_wind_speed+"\t"+avg_cloud_cover+"\t"+
+                                                        avg_temperature));
     }
 }

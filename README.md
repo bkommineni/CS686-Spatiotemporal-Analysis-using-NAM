@@ -30,14 +30,12 @@ Coldest is January at 23°C (73°F) with the most daily sunshine hours at 11 in 
 
 ###### Most frequently struck by lightning (1)12min 10sec (2)23sec (3)20sec
 
-Everything near to Mexico
+All geohashes are in Mexico
 
 9g3h968ygj7z    156 Toluca,Mexico<br/>
+9g3mq3f7y6eb    152 Toluca,Mexico<br/>
 9eqepuxk7x20    148 Cerro Las Conchas,Mexico</br>
-d7mkkfvu34up    135 Dominian Republic</br>
-9shyzwdbxnup    89  Mexico</br>
-9wkkbht8spkp    87</br>
-941zjqq2vtxu    84</br>
+9g3v7kxpuhh0    144 Puebla,Mexico</br>
 
 ###### Driest Month in Bay Area during 2015 - (1)10min
 
@@ -67,46 +65,78 @@ Max Avg Snow Depth - 5m<br/>
 Based on above preferences and 2015 climate data for the 5 regions :
 Favourable months to visit them would be:
 1. Arizona - May,Jun,Jul,Sep,Oct
+    a. May - 292.56277       51.04382        4.3827138E-5
+    b. Jun - 300.92194       46.58578        0.0
+    c. Jul - 301.45947       58.941288       0.0
+    d. Sep - 299.28207       42.99221        0.0
+    e. Oct - 291.98993       49.76654        6.6149323E-6
 2. Florida - Mar,Apr,May,Sep,Oct,Nov,Dec
+    a. Mar - 294.26422       30.085455       1.4293116E-8
+    b. Apr - 297.6622        42.23926        0.0
+    c. May - 300.0827        34.65255        0.0
+    d. Sep - 301.5382        53.565685       0.0
+    e. Oct - 297.70822       22.503584       0.0
+    f. Nov - 296.0505        28.92339        9.08192E-8
+    g. Dec - 294.12573       20.871851       0.0
 3. Oregon - Jun,Jul,Aug,Sep
+    a. Jun - 293.94556       43.104053       1.7911046E-6
+    b. Jul - 295.20505       48.03597        0.0
+    c. Aug - 294.70605       39.359966       5.943702E-9
+    d. Sep - 291.4175        36.90441        6.718079E-7
 4. Colorado - Jun,Jul,Aug,Sep
+    a. Jun - 294.16608       53.087654       5.2387768E-5
+    b. Jul - 295.26694       67.09248        4.991024E-7
+    c. Aug - 295.008 59.13339        5.3883333E-8
+    d. Sep - 292.49283       49.394108       2.2477255E-7
 5. Washington - Jun,Jul,Aug
+    a. Jun - 293.63293       43.92735        9.418114E-6
+    b. Jul - 295.20795       43.58639        0.0
+    c. Aug - 294.24408       43.73395        5.629759E-9
 
 
 ###### NorthAmerica Geohash prefixes
 
-![alt tag](images/NorthAmericaDataPoints.png "List of North America Geohash prefixes")<!-- .element height="10%" width="10%" -->
-
 ###### Top 3 geohashes suitable for solar farms in North America (1)27min 55sec (2)25sec
 
-Places with minimum cloud cover are considered for having solar farms<br/>
-c9vek55pkrxb(Canada Saskatchewan)      -2.04082295E17<br/>
-9r8047xr5b5b(Oregon near to border of California)    -2.0833402E17<br/>
-cdjqy1uehgh0(Canada Saskatchewan)     -2.09644294E17<br/>
-9ybzhkx9ke2p(Kansas)    -2.10084718E17<br/>
-cd40z5s29gkp(Canada Saskatchewan)    -2.10971147E17<br/>
-f9um3p577vzz(NewFoundLand And Labrador)    -2.11417188E17<br/>
+Places with minimum cloud cover and maximum temperature are considered for having solar farms<br/>
+
+9mw7ffyqrt00    29.74500118371951       14.254807       297.81247<br/>
+9mwk6w8fk2rb    31.091553552213377      14.209424       297.75296<br/>
+9mvrmv35ztgz    30.178152560919624      12.861386       296.40222<br/>
+9my0punvczkp    30.116648951808912      13.893617       297.4048<br/>
+9mvbqyfwgvh0    32.48168117810205       14.240602       297.65662<br/>
+9mvf4weq5geb    30.469011962305423      13.664161       297.06744<br/>
+9mvmx4v5pxkp    31.08048932473828       13.959494       297.348<br/>
+
+All the above areas are nearby to San Diego California and nearby to Gulf of California
+
 
 ###### Top 3 geohashes suitable for wind farms in North America
 
 Places with maximum wind speed are considered for having wind farms<br/>
-f2p6h1y1bkrz(Maine)    44.024353<br/>
-f2p266bhdqh0(Maine)    43.98576<br/>
-f2pmh0tmz6zz(Maine)    43.960354<br/>
-f2pk7w2wvb7z(Maine)    43.934837<br/>
-f2pstvxr0180(Maine)    43.93313<br/>
-f2pvtfen2mzz(New Brunswick)    43.851044<br/>
+
+fb8crhxtnuxb(St Pierre and Miquelon near to Gulf of St Lawrence)     45.60562166704028       75.93939        277.06284<br/>
+f8h3eqxbrz80(Nova Scotia)     45.51139503089433       69.13612        280.00922<br/>
+f853ufwqunqp(Nova Scotia)     45.427368341600285      70.9624 278.54803<br/>
+f8545rbfkmup(Nova Scotia)     45.375703198173234      72.799065       279.24084<br/>
+f8hzqq9k8n40(Nova Scotia)     45.34637414851732       72.96403        278.40756<br/>
+f8wcx3wtjmvz(Nova Scotia)     45.343081664132676      85.609024       275.67682<br/>
+f84f9sfbjwrz(Nova Scotia)     45.33818926448409       70.056206       278.7257<br/>
+
+
 
 Looks like Maine state is preferable for wind farms in North America<br/>
 
 
 ###### Top 3 geohashes suitable for both solar and wind farms in North America
 
-Features used to determine this are wind speed and cloud cover:<br/>
-dptp9djvykeb(Michigan)                                  40.09668711334537       -7.3170994E17<br/>
-cbdgu8ssqukp(Border of North Dakota and Minnesota)      35.14385868738097       -7.3170994E17<br/>
-cd5q18brc4gz(Canada)                                    32.80954470153044       -7.3170994E17<br/>
+Features used to determine this are wind speed and cloud cover and temperature:<br/>
 
+cf26j52f6ueb(Manitoba,Canada)    30.9916585915255        62.458538       270.67685<br/>
+f306ehrtt45b(Quebec,Canada)    35.26835273890903       70.43418        274.37436<br/>
+f2yn5s00vqrz(Quebec,Canada)     36.883024918155755      70.953545       273.277<br/>
+cdcd92sgn9xb(Northwest Territories,Canada)    29.325597626483003      60.93947        270.82007<br/>
+cdrhvjns5hgz(Saskatchewan,Canada)    31.16673028523178       61.75853        269.79694<br/>
 
 Have written two chained jobs to find out these:
 1st job took 12mins and 2nd job took 25sec to complete 

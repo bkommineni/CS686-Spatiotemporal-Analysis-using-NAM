@@ -18,14 +18,14 @@ public class MostLikelyLightningReducer2 extends Reducer<Text,Text,Text,IntWrita
 
         Iterator<Text> iterator = values.iterator();
         Text te = iterator.next();
-        String[] ts = te.toString().split(",");
+        String[] ts = te.toString().split("\t");
         max_lightning = Integer.parseInt(ts[1]);
         geohash_max = ts[0];
 
         while (iterator.hasNext())
         {
             Text t = iterator.next();
-            String[] tokens = t.toString().split(",");
+            String[] tokens = t.toString().split("\t");
             if(Integer.parseInt(tokens[1]) > max_lightning)
             {
                 max_lightning = Integer.parseInt(tokens[1]);

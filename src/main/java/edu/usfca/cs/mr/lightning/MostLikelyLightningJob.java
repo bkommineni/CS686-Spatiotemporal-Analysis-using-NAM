@@ -19,7 +19,7 @@ public class MostLikelyLightningJob {
     public static void main(String[] args) {
         try {
             Configuration conf = new Configuration();
-            conf.set("mapreduce.output.textoutputformat.separator",",");
+            conf.set("mapreduce.output.textoutputformat.separator","\t");
             Job job = Job.getInstance(conf, "most likely lightning job");
             job.setJarByClass(MostLikelyLightningJob.class);
             job.setMapperClass(MostLikelyLightningMapper.class);
@@ -33,7 +33,7 @@ public class MostLikelyLightningJob {
             job.waitForCompletion(true);
 
             Configuration config = new Configuration();
-            config.set("mapreduce.output.textoutputformat.separator",",");
+            config.set("mapreduce.output.textoutputformat.separator","\t");
             Job job2 = Job.getInstance(config, "most likely lightning job2");
             job2.setJarByClass(MostLikelyLightningJob.class);
             job2.setMapperClass(MostLikelyLightningMapper1.class);
