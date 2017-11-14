@@ -62,36 +62,36 @@ Max Avg temperature - 302K<br/>
 Max Avg Relative Humidity - 80%<br/>
 Max Avg Snow Depth - 5m<br/>
 
-Based on above preferences and 2015 climate data for the 5 regions :
-Favourable months to visit them would be:
-1. Arizona - May,Jun,Jul,Sep,Oct
-    a. May - 292.56277       51.04382        4.3827138E-5
-    b. Jun - 300.92194       46.58578        0.0
-    c. Jul - 301.45947       58.941288       0.0
-    d. Sep - 299.28207       42.99221        0.0
-    e. Oct - 291.98993       49.76654        6.6149323E-6
-2. Florida - Mar,Apr,May,Sep,Oct,Nov,Dec
-    a. Mar - 294.26422       30.085455       1.4293116E-8
-    b. Apr - 297.6622        42.23926        0.0
-    c. May - 300.0827        34.65255        0.0
-    d. Sep - 301.5382        53.565685       0.0
-    e. Oct - 297.70822       22.503584       0.0
-    f. Nov - 296.0505        28.92339        9.08192E-8
-    g. Dec - 294.12573       20.871851       0.0
-3. Oregon - Jun,Jul,Aug,Sep
-    a. Jun - 293.94556       43.104053       1.7911046E-6
-    b. Jul - 295.20505       48.03597        0.0
-    c. Aug - 294.70605       39.359966       5.943702E-9
-    d. Sep - 291.4175        36.90441        6.718079E-7
-4. Colorado - Jun,Jul,Aug,Sep
-    a. Jun - 294.16608       53.087654       5.2387768E-5
-    b. Jul - 295.26694       67.09248        4.991024E-7
-    c. Aug - 295.008 59.13339        5.3883333E-8
-    d. Sep - 292.49283       49.394108       2.2477255E-7
-5. Washington - Jun,Jul,Aug
-    a. Jun - 293.63293       43.92735        9.418114E-6
-    b. Jul - 295.20795       43.58639        0.0
-    c. Aug - 294.24408       43.73395        5.629759E-9
+Based on above preferences and 2015 climate data for the 5 regions :<br/>
+Favourable months to visit them would be:<br/>
+1. Arizona - May,Jun,Jul,Sep,Oct<br/>
+    a. May - 292.56277       51.04382        4.3827138E-5<br/>
+    b. Jun - 300.92194       46.58578        0.0<br/>
+    c. Jul - 301.45947       58.941288       0.0<br/>
+    d. Sep - 299.28207       42.99221        0.0<br/>
+    e. Oct - 291.98993       49.76654        6.6149323E-6<br/>
+2. Florida - Mar,Apr,May,Sep,Oct,Nov,Dec<br/>
+    a. Mar - 294.26422       30.085455       1.4293116E-8<br/>
+    b. Apr - 297.6622        42.23926        0.0<br/>
+    c. May - 300.0827        34.65255        0.0<br/>
+    d. Sep - 301.5382        53.565685       0.0<br/>
+    e. Oct - 297.70822       22.503584       0.0<br/>
+    f. Nov - 296.0505        28.92339        9.08192E-8<br/>
+    g. Dec - 294.12573       20.871851       0.0<br/>
+3. Oregon - Jun,Jul,Aug,Sep<br/>
+    a. Jun - 293.94556       43.104053       1.7911046E-6<br/>
+    b. Jul - 295.20505       48.03597        0.0<br/>
+    c. Aug - 294.70605       39.359966       5.943702E-9<br/>
+    d. Sep - 291.4175        36.90441        6.718079E-7<br/>
+4. Colorado - Jun,Jul,Aug,Sep<br/>
+    a. Jun - 294.16608       53.087654       5.2387768E-5<br/>
+    b. Jul - 295.26694       67.09248        4.991024E-7<br/>
+    c. Aug - 295.008 59.13339        5.3883333E-8<br/>
+    d. Sep - 292.49283       49.394108       2.2477255E-7<br/>
+5. Washington - Jun,Jul,Aug<br/>
+    a. Jun - 293.63293       43.92735        9.418114E-6<br/>
+    b. Jul - 295.20795       43.58639        0.0<br/>
+    c. Aug - 294.24408       43.73395        5.629759E-9<br/>
 
 
 ###### NorthAmerica Geohash prefixes
@@ -143,7 +143,7 @@ Have written two chained jobs to find out these:
 
 ###### Climate chart for San Francisco, CA (1)7min
 
-Geohash prefix for San Francisco - 9q8y
+Geohash prefix for San Francisco - 9q8y<br/>
 
 ![alt tag](images/sanfrancisco_climate_details.png "Climate chart for San Francisco,CA")<!-- .element height="10%" width="10%" -->
 
