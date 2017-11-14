@@ -59,31 +59,31 @@ public class PersonalItenaryMapper extends Mapper<LongWritable,Text,Text,Text> {
 
         if(Arrays.asList(arizonaGeohashes).contains(geohash.substring(0,3)))
         {
-            context.write(new Text("Arizona"+Integer.toString(calendar.get(Calendar.MONTH) + 1)),
+            context.write(new Text("Arizona_"+Integer.toString(calendar.get(Calendar.MONTH) + 1)),
                     new Text(geohash +"\t"+temperature +"\t"+humidity +"\t"+snowdepth));
         }
 
         if(Arrays.asList(floridaGeohashes).contains(geohash.substring(0,3)))
         {
-            context.write(new Text("Florida"+Integer.toString(calendar.get(Calendar.MONTH) + 1)),
+            context.write(new Text("Florida_"+Integer.toString(calendar.get(Calendar.MONTH) + 1)),
                     new Text(geohash +"\t"+temperature +"\t"+humidity +"\t"+snowdepth));
         }
 
         if(Arrays.asList(oregonGeohashes).contains(geohash.substring(0,3)))
         {
-            context.write(new Text("Oregon"+Integer.toString(calendar.get(Calendar.MONTH) + 1)),
+            context.write(new Text("Oregon_"+Integer.toString(calendar.get(Calendar.MONTH) + 1)),
                     new Text(geohash +"\t"+temperature +"\t"+humidity +"\t"+snowdepth));
         }
 
         if(Arrays.asList(coloradoGeohashes).contains(geohash.substring(0,3)))
         {
-            context.write(new Text("Colorado"+Integer.toString(calendar.get(Calendar.MONTH) + 1)),
+            context.write(new Text("Colorado_"+Integer.toString(calendar.get(Calendar.MONTH) + 1)),
                     new Text(geohash +"\t"+temperature +"\t"+humidity +"\t"+snowdepth));
         }
 
         if(Arrays.asList(washingtonGeohashes).contains(geohash.substring(0,3)))
         {
-            context.write(new Text("Washington"+Integer.toString(calendar.get(Calendar.MONTH) + 1)),
+            context.write(new Text("Washington_"+Integer.toString(calendar.get(Calendar.MONTH) + 1)),
                     new Text(geohash +"\t"+temperature +"\t"+humidity +"\t"+snowdepth));
         }
     }

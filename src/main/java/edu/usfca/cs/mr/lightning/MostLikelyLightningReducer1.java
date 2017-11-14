@@ -14,26 +14,17 @@ public class MostLikelyLightningReducer1 extends Reducer<Text,Text,Text,IntWrita
 
     @Override
     protected void reduce(Text key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
-        String geohash_max = null;
-        int max = 0;
 
+        int sum = 0;
         Iterator<Text> iterator = values.iterator();
-        Text te = iterator.next();
-        String[] strings = te.toString().split(",");
-        max = Integer.parseInt(strings[1]);
-        geohash_max = strings[0];
 
         while (iterator.hasNext())
         {
             Text t = iterator.next();
             String[] tokens = t.toString().split(",");
-            if(Integer.parseInt(tokens[1]) > max)
-            {
-                max = Integer.parseInt(tokens[1]);
-                geohash_max = tokens[0];
-            }
+            sum = sum + Integer.parseInt(tokens[1]);
         }
-        System.out.println("lightning Reducer1 key: "+" "+"value: "+max);
-        context.write(new Text(geohash_max),new IntWritable(max));
+        System.out.println("lightning Reducer1 key: "+" "+"value: "+sum);
+        context.write(key,new IntWritable(sum));
     }
 }

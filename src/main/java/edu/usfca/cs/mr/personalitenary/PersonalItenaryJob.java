@@ -18,6 +18,7 @@ public class PersonalItenaryJob {
         try
         {
             Configuration conf = new Configuration();
+            conf.set("mapreduce.output.textoutputformat.separator","\t");
             Job job = Job.getInstance(conf,"Personal Itenary Job");
             job.setJarByClass(PersonalItenaryJob.class);
             job.setMapperClass(PersonalItenaryMapper.class);
@@ -28,7 +29,20 @@ public class PersonalItenaryJob {
             job.setOutputValueClass(Text.class);
             FileInputFormat.addInputPath(job, new Path(args[0]));
             FileOutputFormat.setOutputPath(job, new Path(args[1]));
-            System.exit(job.waitForCompletion(true) ? 0:1);
+            job.waitForCompletion(true);
+
+            Configuration conf1 = new Configuration();
+            Job job2 = Job.getInstance(conf1,"Personal Itenary Job2");
+            job2.setJarByClass(PersonalItenaryJob.class);
+            job2.setMapperClass(PersonalItenaryMapper1.class);
+            job2.setReducerClass(PersonalItenaryReducer1.class);
+            job2.setMapOutputKeyClass(Text.class);
+            job2.setMapOutputValueClass(Text.class);
+            job2.setOutputKeyClass(Text.class);
+            job2.setOutputValueClass(Text.class);
+            FileInputFormat.addInputPath(job2, new Path(args[1]));
+            FileOutputFormat.setOutputPath(job2, new Path(args[2]));
+            System.exit(job2.waitForCompletion(true) ? 0:1);
         }
         catch (IOException e) {
             e.printStackTrace();

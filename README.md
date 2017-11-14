@@ -28,14 +28,20 @@ created by average highs of 34°C/93°F in the heat of the day and average lows 
 June is the hottest month in Cancun with an average temperature of 28°C (82°F).
 Coldest is January at 23°C (73°F) with the most daily sunshine hours at 11 in August.
 
-###### Most frequently struck by lightning (1)12min 10sec (2)23sec (3)20sec
+###### Most frequently struck by lightning (1)12min 10sec (2)23sec (3)20sec(optional)
 
-All geohashes are in Mexico
+All geohashes are in Mexico without any geohash prefix characters the particular locations are:
 
 9g3h968ygj7z    156 Toluca,Mexico<br/>
 9g3mq3f7y6eb    152 Toluca,Mexico<br/>
 9eqepuxk7x20    148 Cerro Las Conchas,Mexico</br>
 9g3v7kxpuhh0    144 Puebla,Mexico</br>
+
+With geohash prefix of four characters :
+
+9g3m    713 Toluca,Mexico<br/>
+9g0g    711 Guerrero,Mexico<br/>
+9g3y    677 Mexico City,Mexico<br/>
 
 ###### Driest Month in Bay Area during 2015 - (1)10min
 
@@ -63,35 +69,33 @@ Max Avg Relative Humidity - 80%<br/>
 Max Avg Snow Depth - 5m<br/>
 
 Based on above preferences and 2015 climate data for the 5 regions :<br/>
-Favourable months to visit them would be:<br/>
-1. Arizona - May,Jun,Jul,Sep,Oct<br/>
-    a. May - 292.56277       51.04382        4.3827138E-5<br/>
-    b. Jun - 300.92194       46.58578        0.0<br/>
-    c. Jul - 301.45947       58.941288       0.0<br/>
-    d. Sep - 299.28207       42.99221        0.0<br/>
-    e. Oct - 291.98993       49.76654        6.6149323E-6<br/>
-2. Florida - Mar,Apr,May,Sep,Oct,Nov,Dec<br/>
-    a. Mar - 294.26422       30.085455       1.4293116E-8<br/>
-    b. Apr - 297.6622        42.23926        0.0<br/>
-    c. May - 300.0827        34.65255        0.0<br/>
-    d. Sep - 301.5382        53.565685       0.0<br/>
-    e. Oct - 297.70822       22.503584       0.0<br/>
-    f. Nov - 296.0505        28.92339        9.08192E-8<br/>
-    g. Dec - 294.12573       20.871851       0.0<br/>
-3. Oregon - Jun,Jul,Aug,Sep<br/>
-    a. Jun - 293.94556       43.104053       1.7911046E-6<br/>
-    b. Jul - 295.20505       48.03597        0.0<br/>
-    c. Aug - 294.70605       39.359966       5.943702E-9<br/>
-    d. Sep - 291.4175        36.90441        6.718079E-7<br/>
-4. Colorado - Jun,Jul,Aug,Sep<br/>
-    a. Jun - 294.16608       53.087654       5.2387768E-5<br/>
-    b. Jul - 295.26694       67.09248        4.991024E-7<br/>
-    c. Aug - 295.008 59.13339        5.3883333E-8<br/>
-    d. Sep - 292.49283       49.394108       2.2477255E-7<br/>
-5. Washington - Jun,Jul,Aug<br/>
-    a. Jun - 293.63293       43.92735        9.418114E-6<br/>
-    b. Jul - 295.20795       43.58639        0.0<br/>
-    c. Aug - 294.24408       43.73395        5.629759E-9<br/>
+Favourable months to visit them would be:<br/>    
+![alt tag](images/pi_temperature.png)
+![alt tag](images/pi_rel_humidity.png)
+![alt tag](images/pi_snow_depth.png)
+
+Based on my favorability : max. temp , min rel_humidty, min snow_depth calculated favorability index and given
+the following preference order for the 5 regions in those particular months<br/>
+
+Mar - Florida<br/>
+Apr - Florida<br/>
+May - Florida > Arizona<br/>
+Jun - Washington > Arizona > Colorado > Oregon<br/>
+Jul - Washington > Oregon > Arizona > Colorado<br/>
+Aug - Washington > Oregon > Colorado<br/>
+Sep - Arizona > Colorado >  Oregon > Florida<br/>
+Oct - Florida > Arizona<br/>
+Nov - Florida<br/>
+Dec - Florida<br/>
+
+So one of the possible iteneries for 5 regions based on above preference order might be like :
+
+Oct - Florida <br/>
+Sep - Arizona <br/>
+Jul - Washington<br/>
+Jun - Colorado<br/>
+Aug - Oregon<br/>
+
 
 
 ###### NorthAmerica Geohash prefixes
@@ -100,52 +104,45 @@ Favourable months to visit them would be:<br/>
 
 Places with minimum cloud cover and maximum temperature are considered for having solar farms<br/>
 
-9mw7ffyqrt00    29.74500118371951       14.254807       297.81247<br/>
-9mwk6w8fk2rb    31.091553552213377      14.209424       297.75296<br/>
-9mvrmv35ztgz    30.178152560919624      12.861386       296.40222<br/>
-9my0punvczkp    30.116648951808912      13.893617       297.4048<br/>
-9mvbqyfwgvh0    32.48168117810205       14.240602       297.65662<br/>
-9mvf4weq5geb    30.469011962305423      13.664161       297.06744<br/>
-9mvmx4v5pxkp    31.08048932473828       13.959494       297.348<br/>
-
-All the above areas are nearby to San Diego California and nearby to Gulf of California
-
+d7d9ejecxkzz(Cuba)                21.73398572647325       15.855072       303.586<br/>
+d7d9tdxsr87b(Cuba)                20.94489629762636       15.20548        302.8527<br/>
+9mwj7zuyfuh0(Baja California)     30.487184732059156      12.454321       299.08005<br/>
+9mtvvtwjhch0(Baja California)     30.290434151539348      11.678392       298.10605<br/>
+9mwhc3qmk5u0(Baja California)     30.202851409005046      12.030457       297.98712<br/>
+9mtzhuf4cbrz(Baja California)     30.27657473059271       12.332506       298.2729<br/>
+9mqr7n96gpez(Baja California)     30.1630597189346        11.412048       297.06848<br/>
 
 ###### Top 3 geohashes suitable for wind farms in North America
 
 Places with maximum wind speed are considered for having wind farms<br/>
 
-fb8crhxtnuxb(St Pierre and Miquelon near to Gulf of St Lawrence)     45.60562166704028       75.93939        277.06284<br/>
-f8h3eqxbrz80(Nova Scotia)     45.51139503089433       69.13612        280.00922<br/>
-f853ufwqunqp(Nova Scotia)     45.427368341600285      70.9624 278.54803<br/>
-f8545rbfkmup(Nova Scotia)     45.375703198173234      72.799065       279.24084<br/>
-f8hzqq9k8n40(Nova Scotia)     45.34637414851732       72.96403        278.40756<br/>
-f8wcx3wtjmvz(Nova Scotia)     45.343081664132676      85.609024       275.67682<br/>
-f84f9sfbjwrz(Nova Scotia)     45.33818926448409       70.056206       278.7257<br/>
-
-
-
-Looks like Maine state is preferable for wind farms in North America<br/>
-
+fb8crhxtnuxb(Gulf of St Lawrence)     45.60562166704028       75.93939        277.06284<br/>
+f8h3eqxbrz80(Nova Scotia)             45.51139503089433       69.13612        280.00922<br/>
+f853ufwqunqp(Nova Scotia)             45.427368341600285      70.9624         278.54803<br/>
+f8545rbfkmup(Nova Scotia)             45.375703198173234      72.799065       279.24084<br/>
+f8hzqq9k8n40(Nova Scotia)             45.34637414851732       72.96403        278.40756<br/>
+f8wcx3wtjmvz(Nova Scotia)             45.343081664132676      85.609024       275.67682<br/>
+f84f9sfbjwrz(Nova Scotia)             45.33818926448409       70.056206       278.7257<br/>
 
 ###### Top 3 geohashes suitable for both solar and wind farms in North America
 
-Features used to determine this are wind speed and cloud cover and temperature:<br/>
+Features used to determine this are wind speed, cloud cover and temperature:<br/>
 
-cf26j52f6ueb(Manitoba,Canada)    30.9916585915255        62.458538       270.67685<br/>
-f306ehrtt45b(Quebec,Canada)    35.26835273890903       70.43418        274.37436<br/>
-f2yn5s00vqrz(Quebec,Canada)     36.883024918155755      70.953545       273.277<br/>
-cdcd92sgn9xb(Northwest Territories,Canada)    29.325597626483003      60.93947        270.82007<br/>
-cdrhvjns5hgz(Saskatchewan,Canada)    31.16673028523178       61.75853        269.79694<br/>
+9mwhkb8ryj80    31.61321312646921       12.7459955      298.33057<br/>
+9mwj7zuyfuh0    30.487184732059156      12.454321       299.08005<br/>
+9mtvvtwjhch0    30.290434151539348      11.678392       298.10605<br/>
+9mwmz7w98y7b    31.918883163507314      12.593674       297.12967<br/>
+9mtyt30pgzkp    31.201601643714277      14.049383       299.21548<br/>
+9mtzhuf4cbrz    30.27657473059271       12.332506       298.2729<br/>
+9mwhc3qmk5u0    30.202851409005046      12.030457       297.98712<br/>
 
-Have written two chained jobs to find out these:
-1st job took 12mins and 2nd job took 25sec to complete 
+All the above geohashes fall in region nearby Baja California and Gulf of California<br/>
 
 ###### Climate chart for San Francisco, CA (1)7min
 
 Geohash prefix for San Francisco - 9q8y<br/>
 
-![alt tag](images/sanfrancisco_climate_details.png "Climate chart for San Francisco,CA")<!-- .element height="10%" width="10%" -->
+![alt tag](images/sanfrancisco_climate_details.png "Climate chart for San Francisco,CA")
 
 
 
